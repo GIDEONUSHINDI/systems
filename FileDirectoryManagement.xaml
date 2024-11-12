@@ -1,0 +1,29 @@
+﻿<Page x:Class="ushindi.FileDirectoryManagement"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ushindi"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="FileDirectoryManagement">
+
+    <Grid>
+        <Button Content="Create Directory" HorizontalAlignment="Left" Height="65" Margin="15,85,0,0" VerticalAlignment="Top" Width="185" Click="CreateDirectory_Click"/>
+        <Button Content="Subdirectory" HorizontalAlignment="Left" Height="65" Margin="245,85,0,0" VerticalAlignment="Top" Width="155" Click="SubDirectory_Click" />
+        <Button Content="Delete Directory" HorizontalAlignment="Left" Height="65" Margin="430,85,0,0" VerticalAlignment="Top" Width="150" Click="DeleteDirectory_Click"/>
+        <Button Content="Move Directory" HorizontalAlignment="Left" Height="65" Margin="605,85,0,0" VerticalAlignment="Top" Width="185" Click="MoveDirectory_Click" />
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="10,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
+        <Button Content="List Files Type" HorizontalAlignment="Left" Height="80" Margin="15,0,0,0" VerticalAlignment="Center" Width="185" Click="ListFiles_Click"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Height="85" Margin="15,390,0,0" VerticalAlignment="Top" Width="185"/>
+        <Button Content="List Directories" HorizontalAlignment="Left" Height="85" Margin="15,495,0,0" VerticalAlignment="Top" Width="185"/>
+        <ListView Name="listView1" HorizontalAlignment="Left" Height="375" Margin="290,205,0,0" VerticalAlignment="Top" Width="370" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>
